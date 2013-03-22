@@ -1,0 +1,80 @@
+@prefix cpan:  <http://purl.org/NET/cpan-uri/person/> .
+@prefix cpant: <http://purl.org/NET/cpan-uri/terms#> .
+@prefix dc:    <http://purl.org/dc/terms/> .
+@prefix dcs:   <http://ontologi.es/doap-changeset#> .
+@prefix dist:  <http://purl.org/NET/cpan-uri/dist/Syntax-Highlight-RDF/> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix nfo:   <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+dist:project
+	a                 doap:Project;
+	doap:name         "Syntax-Highlight-RDF";
+	cpant:perl_version_from [
+		a nfo:FileDataObject;
+		a nfo:SourceCode;
+		rdfs:label "Syntax::Highlight::RDF";
+		nfo:fileName "lib/Syntax/Highlight/RDF.pm";
+		nfo:programmingLanguage "Perl";
+	];
+	cpant:readme_from [
+		a nfo:FileDataObject;
+		a nfo:SourceCode;
+		rdfs:label "Syntax::Highlight::RDF";
+		nfo:fileName "lib/Syntax/Highlight/RDF.pm";
+		nfo:programmingLanguage "Perl";
+	];
+	cpant:recommends  "JSON 2.00"^^cpant:dsWithVersion;
+	cpant:recommends  "RDF::Trine 1.000"^^cpant:dsWithVersion;
+	cpant:recommends  "RDF::TrineX::Serializer::MockTurtleSoup 0.001"^^cpant:dsWithVersion;
+	cpant:requires    "HTML::HTML5::Entities 0.001"^^cpant:dsWithVersion;
+	cpant:requires    "IO::Detect 0.001"^^cpant:dsWithVersion;
+	cpant:requires    "Moo 1.001000"^^cpant:dsWithVersion;
+	cpant:requires    "MooX::Struct 0.001"^^cpant:dsWithVersion;
+	cpant:requires    "Throwable::Factory 0.001"^^cpant:dsWithVersion;
+	cpant:requires    "URI"^^cpant:dsWithoutVersion;
+	cpant:test_requires "Test::LongString"^^cpant:dsWithoutVersion;
+	cpant:version_from [
+		a nfo:FileDataObject;
+		a nfo:SourceCode;
+		rdfs:label "Syntax::Highlight::RDF";
+		nfo:fileName "lib/Syntax/Highlight/RDF.pm";
+		nfo:programmingLanguage "Perl";
+	];
+	dc:contributor    cpan:tobyink;
+	doap:bug-database <http://rt.cpan.org/Dist/Display.html?Queue=Syntax-Highlight-RDF>;
+	doap:created      "2013-03-21"^^xsd:date;
+	doap:developer    cpan:tobyink;
+	doap:download-page <https://metacpan.org/release/Syntax-Highlight-RDF>;
+	doap:homepage     <https://metacpan.org/release/Syntax-Highlight-RDF>;
+	doap:license      <http://dev.perl.org/licenses/>;
+	doap:maintainer   cpan:tobyink;
+	doap:programming-language "Perl";
+	doap:release      dist:v_0-001;
+	doap:repository   [
+		a doap:HgRepository;
+		doap:browse <https://bitbucket.org/tobyink/p5-syntax-highlight-rdf>;
+	];
+	doap:shortdesc    "syntax highlighting for various RDF-related formats".
+
+dist:v_0-001
+	a                 doap:Version;
+	rdfs:label        "Initial release";
+	dc:identifier     "Syntax-Highlight-RDF-0.001"^^xsd:string;
+	dc:issued         "2013-03-22"^^xsd:date;
+	dcs:released-by   cpan:tobyink;
+	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Syntax-Highlight-RDF-0.001.tar.gz>;
+	doap:revision     "0.001"^^xsd:string.
+
+cpan:tobyink
+	a                 foaf:Person;
+	foaf:name         "Toby Inkster";
+	foaf:mbox         <mailto:tobyink@cpan.org>;
+	foaf:nick         "TOBYINK";
+	foaf:page         <https://metacpan.org/author/TOBYINK>.
+
+<http://dev.perl.org/licenses/>
+	dc:title          "the same terms as the perl 5 programming language system itself".
+

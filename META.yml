@@ -1,0 +1,43 @@
+---
+abstract: 'syntax highlighting for various RDF-related formats'
+author:
+  - 'Toby Inkster <tobyink@cpan.org>'
+build_requires:
+  ExtUtils::MakeMaker: 6.59
+  Test::LongString: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.59
+distribution_type: module
+dynamic_config: 0
+generated_by: 'Module::Install version 1.06'
+keywords: []
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+module_name: Syntax::Highlight::RDF
+name: Syntax-Highlight-RDF
+no_index:
+  directory:
+    - examples
+    - inc
+    - t
+    - xt
+recommends:
+  JSON: 2.00
+  RDF::Trine: 1.000
+  RDF::TrineX::Serializer::MockTurtleSoup: 0.001
+requires:
+  HTML::HTML5::Entities: 0.001
+  IO::Detect: 0.001
+  Moo: 1.001000
+  MooX::Struct: 0.001
+  Throwable::Factory: 0.001
+  URI: 0
+  perl: 5.10.1
+resources:
+  bugtracker: http://rt.cpan.org/Dist/Display.html?Queue=Syntax-Highlight-RDF
+  homepage: https://metacpan.org/release/Syntax-Highlight-RDF
+  license: http://dev.perl.org/licenses/
+  repository: https://bitbucket.org/tobyink/p5-syntax-highlight-rdf
+version: 0.001

@@ -1,0 +1,65 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 f983c18fdb491c4b733235d54e8ca7563b67a6a3 CONTRIBUTING
+SHA1 da2743ba8ae72cae4efa76f3fe2026f12f3e114f COPYRIGHT
+SHA1 9e307a5415ca4fa0a76a08bd7236f23f15544ea8 CREDITS
+SHA1 696df1f8ca07bafc873afcbb68b0b814ea768a7d Changes
+SHA1 937d452c5c4069f4cda9ffaf45a33f1eb5f060e8 LICENSE
+SHA1 7410297273ea01d53c01e00b9216e8b0f1395d7e MANIFEST
+SHA1 06b21301a9943e554b79fbe32b3f362a14a8f4ae META.ttl
+SHA1 6eff57a809367281e72f894f71d35d7238654a64 META.yml
+SHA1 5847ba4f788090acc163ed1eb21b34ec3f2ce244 Makefile.PL
+SHA1 3bfe8ed87ac261e15aa8c11aec9b0d945b9769d4 README
+SHA1 d31762ff76363f3d228ca2ac68f9f438ce0d7b1d examples/json_to_html.pl
+SHA1 7a25f959d74f93a27cd7b8d0cb4171e3e1f9a59a examples/model_to_html.pl
+SHA1 df15e600aaf7be1dfb6c56cdf3a91f0b65be129d examples/pretdsl_to_html.pl
+SHA1 29c4eb129624e7310a2d253a1322d3ef891d4a6e examples/sparql_to_html.pl
+SHA1 385747b9f86f4ed83cc9e55d5469930adaff1bf5 examples/turtle_to_html.pl
+SHA1 c18bcd948bb48fd5eccdaf452d009b3d87ac39ea examples/turtle_tokens.pl
+SHA1 db5cb18adaa8010a9126bbc68c84f93bd71f5b15 examples/xml_to_html.pl
+SHA1 06c410f05488c1612ed66b06d3a86b2580581e4a inc/Module/AutoInstall.pm
+SHA1 8a924add836b60fb23b25c8506d45945e02f42f4 inc/Module/Install.pm
+SHA1 61ab1dd37e33ddbe155907ce51df8a3e56ac8bbf inc/Module/Install/AutoInstall.pm
+SHA1 c04f94f91fa97b9f8cfb5a36071098ab0e6c78e3 inc/Module/Install/AutoManifest.pm
+SHA1 2d0fad3bf255f8c1e7e1e34eafccc4f595603ddc inc/Module/Install/Base.pm
+SHA1 f0e01fff7d73cd145fbf22331579918d4628ddb0 inc/Module/Install/Can.pm
+SHA1 7328966e4fda0c8451a6d3850704da0b84ac1540 inc/Module/Install/Fetch.pm
+SHA1 66d3d335a03492583a3be121a7d888f63f08412c inc/Module/Install/Include.pm
+SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
+SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
+SHA1 3b9281ddf7dd6d6f5de0a9642c69333023193c80 inc/Module/Install/Package.pm
+SHA1 41f76ff6b39368a65da86377e43b34bacc2fb0eb inc/Module/Install/TrustMetaYml.pm
+SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
+SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
+SHA1 26d58a041cd6b3d21db98b32e8fd1841aae21204 inc/Module/Package.pm
+SHA1 5a2f84a7a82eee0d1e5ed3628fe503a608efc10f inc/Module/Package/Dist/RDF.pm
+SHA1 feb933cefe2e3762e8322bd6071a2499f3440da1 inc/YAML/Tiny.pm
+SHA1 a21108b47a6ebfbc1f1ced2c03dd4da7658b05fe lib/Syntax/Highlight/JSON2.pm
+SHA1 fa8e5cc28e45e98170388133fe942892fd382eb9 lib/Syntax/Highlight/RDF.pm
+SHA1 db23049c0d84ce96fb8d1d3a3ff6e10d3b6862dd lib/Syntax/Highlight/XML.pm
+SHA1 22f6160f314f93709ef04a43006052fefc0951a1 meta/changes.pret
+SHA1 637c604346b88acb585a54c1ffb7afd4f88606e8 meta/doap.pret
+SHA1 da6cd7e7211c190d76d984ec89e9edd3f563cb03 meta/makefile.pret
+SHA1 a151cff74b5f29c00381a14d4ec8726e3763b6b2 meta/people.pret
+SHA1 7af1d4de0e036575adbe821942f07b3f4f51ef8a t/01basic.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iEYEARECAAYFAlFM2E0ACgkQzr+BKGoqfTliIQCgtlHO8LXdIkITcx2S8gC04k7Z
+x6gAn3jgjMUB4/a2kyCBndKL0mowM/4I
+=zL/L
+-----END PGP SIGNATURE-----
