@@ -40,4 +40,4 @@ resources:
   homepage: https://metacpan.org/release/Syntax-Highlight-RDF
   license: http://dev.perl.org/licenses/
   repository: https://bitbucket.org/tobyink/p5-syntax-highlight-rdf
-version: 0.001
+version: 0.002

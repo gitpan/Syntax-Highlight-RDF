@@ -6,7 +6,7 @@ use warnings;
 
 BEGIN {
 	$Syntax::Highlight::RDF::AUTHORITY = 'cpan:TOBYINK';
-	$Syntax::Highlight::RDF::VERSION   = '0.001';
+	$Syntax::Highlight::RDF::VERSION   = '0.002';
 }
 
 use MooX::Struct -retain, -rw,
@@ -204,9 +204,13 @@ use constant mode => (MODE_NTRIPLES | MODE_TURTLE | MODE_NOTATION_3 | MODE_SPARQ
 has _remaining => (is => "rw");
 has _tokens    => (is => "rw");
 
-my $nameStartChar  = qr{A-Za-z_\x{00C0}-\x{00D6}\x{00D8}-\x{00F6}\x{00F8}-\x{02FF}\x{0370}-\x{037D}\x{037F}-\x{1FFF}\x{200C}-\x{200D}\x{2070}-\x{218F}\x{2C00}-\x{2FEF}\x{3001}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFFD}\x{10000}-\x{EFFFF}};
-my $nameStartChar2 = qr{A-Za-yz\x{00C0}-\x{00D6}\x{00D8}-\x{00F6}\x{00F8}-\x{02FF}\x{0370}-\x{037D}\x{037F}-\x{1FFF}\x{200C}-\x{200D}\x{2070}-\x{218F}\x{2C00}-\x{2FEF}\x{3001}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFFD}\x{10000}-\x{EFFFF}};
-my $nameChar       = qr{A-Za-z_\x{00C0}-\x{00D6}\x{00D8}-\x{00F6}\x{00F8}-\x{037D}\x{037F}-\x{1FFF}\x{200C}-\x{200D}\x{2070}-\x{218F}\x{2C00}-\x{2FEF}\x{3001}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFFD}\x{10000}-\x{EFFFF}\x{00B7}\x{203F}\x{2040}0-9-};
+my ($nameStartChar, $nameStartChar2, $nameChar);
+{
+	no warnings "utf8";
+	$nameStartChar  = qr{A-Za-z_\x{00C0}-\x{00D6}\x{00D8}-\x{00F6}\x{00F8}-\x{02FF}\x{0370}-\x{037D}\x{037F}-\x{1FFF}\x{200C}-\x{200D}\x{2070}-\x{218F}\x{2C00}-\x{2FEF}\x{3001}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFFD}\x{10000}-\x{EFFFF}};
+	$nameStartChar2 = qr{A-Za-yz\x{00C0}-\x{00D6}\x{00D8}-\x{00F6}\x{00F8}-\x{02FF}\x{0370}-\x{037D}\x{037F}-\x{1FFF}\x{200C}-\x{200D}\x{2070}-\x{218F}\x{2C00}-\x{2FEF}\x{3001}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFFD}\x{10000}-\x{EFFFF}};
+	$nameChar       = qr{A-Za-z_\x{00C0}-\x{00D6}\x{00D8}-\x{00F6}\x{00F8}-\x{037D}\x{037F}-\x{1FFF}\x{200C}-\x{200D}\x{2070}-\x{218F}\x{2C00}-\x{2FEF}\x{3001}-\x{D7FF}\x{F900}-\x{FDCF}\x{FDF0}-\x{FFFD}\x{10000}-\x{EFFFF}\x{00B7}\x{203F}\x{2040}0-9-};
+}
 
 our @sparqlQueryWord = qw(
 	BASE
@@ -960,7 +964,7 @@ sub highlight
 {
 	package Syntax::Highlight::RDF::NTriples;
 	our $AUTHORITY = 'cpan:TOBYINK';
-	our $VERSION   = '0.001';
+	our $VERSION   = '0.002';
 	use Moo;
 	extends "Syntax::Highlight::RDF";
 	use constant mode => Syntax::Highlight::RDF::MODE_NTRIPLES;
@@ -974,7 +978,7 @@ sub highlight
 {
 	package Syntax::Highlight::RDF::Turtle;
 	our $AUTHORITY = 'cpan:TOBYINK';
-	our $VERSION   = '0.001';
+	our $VERSION   = '0.002';
 	use Moo;
 	extends "Syntax::Highlight::RDF";
 	use constant mode => Syntax::Highlight::RDF::MODE_NTRIPLES
@@ -991,7 +995,7 @@ sub highlight
 {
 	package Syntax::Highlight::RDF::Notation_3;
 	our $AUTHORITY = 'cpan:TOBYINK';
-	our $VERSION   = '0.001';
+	our $VERSION   = '0.002';
 	use Moo;
 	extends "Syntax::Highlight::RDF";
 	use constant mode => Syntax::Highlight::RDF::MODE_NTRIPLES
@@ -1007,7 +1011,7 @@ sub highlight
 {
 	package Syntax::Highlight::RDF::SPARQL_Query;
 	our $AUTHORITY = 'cpan:TOBYINK';
-	our $VERSION   = '0.001';
+	our $VERSION   = '0.002';
 	use Moo;
 	extends "Syntax::Highlight::RDF";
 	use constant mode => Syntax::Highlight::RDF::MODE_NTRIPLES
@@ -1018,7 +1022,7 @@ sub highlight
 {
 	package Syntax::Highlight::RDF::SPARQL_Update;
 	our $AUTHORITY = 'cpan:TOBYINK';
-	our $VERSION   = '0.001';
+	our $VERSION   = '0.002';
 	use Moo;
 	extends "Syntax::Highlight::RDF";
 	use constant mode => Syntax::Highlight::RDF::MODE_NTRIPLES
@@ -1029,7 +1033,7 @@ sub highlight
 {
 	package Syntax::Highlight::RDF::Pretdsl;
 	our $AUTHORITY = 'cpan:TOBYINK';
-	our $VERSION   = '0.001';
+	our $VERSION   = '0.002';
 	use Moo;
 	extends "Syntax::Highlight::RDF";
 	use constant mode => Syntax::Highlight::RDF::MODE_NTRIPLES
@@ -1041,7 +1045,7 @@ sub highlight
 {
 	package Syntax::Highlight::RDF::NQuads;
 	our $AUTHORITY = 'cpan:TOBYINK';
-	our $VERSION   = '0.001';
+	our $VERSION   = '0.002';
 	use Moo;
 	extends "Syntax::Highlight::RDF";
 	use constant mode => Syntax::Highlight::RDF::MODE_NTRIPLES;
@@ -1055,7 +1059,7 @@ sub highlight
 {
 	package Syntax::Highlight::RDF::TriG;
 	our $AUTHORITY = 'cpan:TOBYINK';
-	our $VERSION   = '0.001';
+	our $VERSION   = '0.002';
 	use Moo;
 	extends "Syntax::Highlight::RDF";
 	use constant mode => Syntax::Highlight::RDF::MODE_NTRIPLES

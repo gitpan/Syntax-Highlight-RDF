@@ -53,6 +53,7 @@ dist:project
 	doap:maintainer   cpan:tobyink;
 	doap:programming-language "Perl";
 	doap:release      dist:v_0-001;
+	doap:release      dist:v_0-002;
 	doap:repository   [
 		a doap:HgRepository;
 		doap:browse <https://bitbucket.org/tobyink/p5-syntax-highlight-rdf>;
@@ -67,6 +68,20 @@ dist:v_0-001
 	dcs:released-by   cpan:tobyink;
 	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Syntax-Highlight-RDF-0.001.tar.gz>;
 	doap:revision     "0.001"^^xsd:string.
+
+dist:v_0-002
+	a                 doap:Version;
+	dc:identifier     "Syntax-Highlight-RDF-0.002"^^xsd:string;
+	dc:issued         "2013-03-23"^^xsd:date;
+	dcs:changeset     [
+		dcs:item [
+			a dcs:Bugfix;
+			rdfs:label "Fix fatal UTF-8-related warning on certain Perls.";
+		];
+	];
+	dcs:released-by   cpan:tobyink;
+	doap:file-release <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Syntax-Highlight-RDF-0.002.tar.gz>;
+	doap:revision     "0.002"^^xsd:string.
 
 cpan:tobyink
 	a                 foaf:Person;
