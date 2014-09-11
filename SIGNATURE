@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.70.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,16 +14,19 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 f983c18fdb491c4b733235d54e8ca7563b67a6a3 CONTRIBUTING
-SHA1 da2743ba8ae72cae4efa76f3fe2026f12f3e114f COPYRIGHT
-SHA1 9e307a5415ca4fa0a76a08bd7236f23f15544ea8 CREDITS
-SHA1 c12cf36d591a8169dbd146114e784cc15e662e0f Changes
-SHA1 937d452c5c4069f4cda9ffaf45a33f1eb5f060e8 LICENSE
-SHA1 7410297273ea01d53c01e00b9216e8b0f1395d7e MANIFEST
-SHA1 5fd120482dc4c7c2323437598d08cd8dcab48a0d META.ttl
-SHA1 eee8eefe94695b9226b6201f7350cfc0d311855a META.yml
-SHA1 5847ba4f788090acc163ed1eb21b34ec3f2ce244 Makefile.PL
-SHA1 3bfe8ed87ac261e15aa8c11aec9b0d945b9769d4 README
+SHA1 33317486c4fa2cf7fec85bf92ed38ac0f64233a0 CONTRIBUTING
+SHA1 61526eab30ffdf09206bf77cb6e825286171a3c6 COPYRIGHT
+SHA1 6bd7b17d81be63d08d4efa6cb80106e72887842c CREDITS
+SHA1 6f24ce9566481175747f77b49f48ec6ec7c6b594 Changes
+SHA1 761d48f6a783ca05b557a59feb8c1f1a2465af3f INSTALL
+SHA1 34f5e12514b91055de4b164a1f2327ef5c30ba53 LICENSE
+SHA1 59cf61b8dd6bf5cb05f2f8116e7f7eb11c17438a MANIFEST
+SHA1 a4f96f682144ba742ed67d1c45e1028abe81fbc5 META.json
+SHA1 653dce712607147652019e6efbf951e723ada0a9 META.yml
+SHA1 ebfaff9cc18ec303b0b0ba0b21f048fda6ce9c2b Makefile.PL
+SHA1 acf39d7d2078f59779207687363f671a975ad091 README
+SHA1 6618808a74a35bf63567b4529a283f93d572cd7b dist.ini
+SHA1 75f71c3c3ff82fa33b0c072cd6409d7615398cef doap.ttl
 SHA1 d31762ff76363f3d228ca2ac68f9f438ce0d7b1d examples/json_to_html.pl
 SHA1 7a25f959d74f93a27cd7b8d0cb4171e3e1f9a59a examples/model_to_html.pl
 SHA1 df15e600aaf7be1dfb6c56cdf3a91f0b65be129d examples/pretdsl_to_html.pl
@@ -31,35 +34,14 @@ SHA1 29c4eb129624e7310a2d253a1322d3ef891d4a6e examples/sparql_to_html.pl
 SHA1 385747b9f86f4ed83cc9e55d5469930adaff1bf5 examples/turtle_to_html.pl
 SHA1 c18bcd948bb48fd5eccdaf452d009b3d87ac39ea examples/turtle_tokens.pl
 SHA1 db5cb18adaa8010a9126bbc68c84f93bd71f5b15 examples/xml_to_html.pl
-SHA1 06c410f05488c1612ed66b06d3a86b2580581e4a inc/Module/AutoInstall.pm
-SHA1 8a924add836b60fb23b25c8506d45945e02f42f4 inc/Module/Install.pm
-SHA1 61ab1dd37e33ddbe155907ce51df8a3e56ac8bbf inc/Module/Install/AutoInstall.pm
-SHA1 c04f94f91fa97b9f8cfb5a36071098ab0e6c78e3 inc/Module/Install/AutoManifest.pm
-SHA1 2d0fad3bf255f8c1e7e1e34eafccc4f595603ddc inc/Module/Install/Base.pm
-SHA1 f0e01fff7d73cd145fbf22331579918d4628ddb0 inc/Module/Install/Can.pm
-SHA1 7328966e4fda0c8451a6d3850704da0b84ac1540 inc/Module/Install/Fetch.pm
-SHA1 66d3d335a03492583a3be121a7d888f63f08412c inc/Module/Install/Include.pm
-SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
-SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
-SHA1 3b9281ddf7dd6d6f5de0a9642c69333023193c80 inc/Module/Install/Package.pm
-SHA1 41f76ff6b39368a65da86377e43b34bacc2fb0eb inc/Module/Install/TrustMetaYml.pm
-SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
-SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
-SHA1 26d58a041cd6b3d21db98b32e8fd1841aae21204 inc/Module/Package.pm
-SHA1 5a2f84a7a82eee0d1e5ed3628fe503a608efc10f inc/Module/Package/Dist/RDF.pm
-SHA1 feb933cefe2e3762e8322bd6071a2499f3440da1 inc/YAML/Tiny.pm
-SHA1 9eed2fc27692168dea29090e983ac9463709c3f1 lib/Syntax/Highlight/JSON2.pm
-SHA1 754eadaeb4bf1364bff6d0b840462602a0ae7a15 lib/Syntax/Highlight/RDF.pm
-SHA1 6b344f581480176d2056f55e34787ab72351c387 lib/Syntax/Highlight/XML.pm
-SHA1 8cb57244d249bfa6352549f229994aa7bc2456c2 meta/changes.pret
-SHA1 637c604346b88acb585a54c1ffb7afd4f88606e8 meta/doap.pret
-SHA1 da6cd7e7211c190d76d984ec89e9edd3f563cb03 meta/makefile.pret
-SHA1 a151cff74b5f29c00381a14d4ec8726e3763b6b2 meta/people.pret
+SHA1 3bae3a7aa594df08d5ab484bebad15cb4c826f86 lib/Syntax/Highlight/JSON2.pm
+SHA1 e27cb8d4d15f61b38bb41180d133891f5638577e lib/Syntax/Highlight/RDF.pm
+SHA1 e8d678b8095cd838da18480c3460fd7b55492028 lib/Syntax/Highlight/XML.pm
 SHA1 7af1d4de0e036575adbe821942f07b3f4f51ef8a t/01basic.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.11 (GNU/Linux)
+Version: GnuPG v1
 
-iEYEARECAAYFAlFOFqUACgkQzr+BKGoqfTmfewCeKEK75x54G7eCkBwZha0zo4eb
-B+0AnRTzS3MCNalwK026druojJBhQUin
-=aRxJ
+iEYEARECAAYFAlQRhhcACgkQzr+BKGoqfTmdYQCffC92gUm7Aj4Mi0hgVj+nF0yZ
+NhsAoInjknlgLl5YqQMkO0lgf8Qa8zYt
+=8wDF
 -----END PGP SIGNATURE-----
